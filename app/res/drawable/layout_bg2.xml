@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <stroke
+                android:width="2px"
+                android:color="@color/cateloglist_list_title_item_edging_1" />
+            <!-- 边框颜色 -->
+            <solid android:color="@color/cateloglist_list_title_item_edging_2" />
+            <!-- 填充色 -->
+        </shape>
+    </item>
+
+</layer-list>

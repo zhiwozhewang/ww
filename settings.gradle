@@ -1,0 +1,5 @@
+include ':app'
+include ':libraries:Longyuan-SDK-TAB'
+include ':libraries:slidingMenu'
+include ':libraries:ReaderCode'
+//project(':ReaderCode').projectDir = new File('libraries/ReaderCode')

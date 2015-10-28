@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#fff"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:id="@+id/magShelf_relativelayout"
+    android:scrollbars="none" >
+
+    <!-- <include
+        android:id="@+id/relativeLayout1"
+        layout="@layout/head_offline_layout" /> -->
+
+    <GridView
+        android:id="@+id/magShelf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="0dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="0dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="0dp" />
+<!--         android:cacheColorHint="#00000000" -->
+
+
+</RelativeLayout>

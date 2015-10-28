@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="@dimen/refer_image_thumb_width"
+        android:layout_height="@dimen/refer_image_thumb_height"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_image_thumb"
+        android:contentDescription="@string/imageDescription"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_thumb"
+        android:minHeight="120dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_name_example"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/title_name_example"
+            android:textColor="@color/color_7b7b7b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/title_name_example"
+            android:textColor="@color/color_b30f13"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:layout_below="@id/ll_content"
+        android:background="@drawable/line" />
+
+</RelativeLayout>

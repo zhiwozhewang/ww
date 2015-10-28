@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+        <RelativeLayout
+        android:id="@+id/mag_att_cover"
+        android:layout_width="110dip"
+        android:layout_height="146dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" >
+
+        <ImageView
+            android:id="@+id/mag_att_imageView_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/layout_bg2"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mag_att_tvMagName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mag_att_cover"
+        android:layout_alignRight="@id/mag_att_cover"
+        android:layout_below="@id/mag_att_cover"
+        android:gravity="left"
+        android:lines="2"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="#FBFBFB"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head_layout"
+        layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/head_layout"
+        android:layout_margin="10dp"
+        android:background="@drawable/searchlayout_bg">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignBottom="@+id/search_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/search_button"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/search_button">
+
+            <EditText
+                android:id="@+id/search_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:ems="10"
+                android:hint="在龙源杂志库内搜索文章"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="#6F6F6F"
+                android:textColorHint="#6F6F6F"
+                android:textStyle="normal">
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/search_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:text="搜索"
+            android:textColor="@color/search_button"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginBottom="0dp"
+        android:background="#FBFBFB">
+
+        <!-- android:scrollingCache是拖动时候背景布变色 -->
+
+        <ListView
+            android:id="@+id/search_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FBFBFB"
+            android:cacheColorHint="#000000"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1.5dp"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:scrollingCache="false"></ListView>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:visibility="gone"></GridView>
+
+</RelativeLayout>

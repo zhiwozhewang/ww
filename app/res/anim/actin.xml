@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 从屏幕右边偏离2%位置开始进入，到达终点后有超出在返回终点的动态效果    要进来的下一个activity-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:fromXDelta="100%p"
+    android:startOffset="200"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:toXDelta="0%p" />
+
+    
+<!-- 
+
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromXDelta="102%p"
+    android:interpolator="@android:anim/anticipate_overshoot_interpolator"
+    android:startOffset="200"
+    android:toXDelta="0%p" />
+@android:anim/accelerate_interpolator： 越来越快
+@android:anim/decelerate_interpolator：越来越慢
+@android:anim/accelerate_decelerate_interpolator：先快后慢
+@android:anim/anticipate_interpolator: 先后退一小步然后向前加速
+@android:anim/overshoot_interpolator：快速到达终点超出一小步然后回到终点
+@android:anim/anticipate_overshoot_interpolator：到达终点超出一小步然后回到终点
+@android:anim/bounce_interpolator：到达终点产生弹球效果，弹几下回到终点
+@android:anim/linear_interpolator：均匀速度。
+
+ -->

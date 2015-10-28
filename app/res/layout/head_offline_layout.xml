@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="@color/system_top_nav">
+
+    <LinearLayout
+        android:id="@+id/changeRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/change_magazine"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/offline_left_unpitchup"
+                android:text="杂志架"
+                android:textColor="@color/system_top" />
+
+            <Button
+                android:id="@+id/change_book"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/change_magazine"
+                android:background="@drawable/offline_right_pitchup"
+                android:text="书架"
+                android:textColor="@color/system_top_nav" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/head_offline_layout_showRight"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_pc_selector"
+        android:onClick="showRightMenu" />
+
+    <Button
+        android:id="@+id/head_offline_layout_showLeft"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_nav_selector"
+        android:onClick="showMenu" />
+
+</RelativeLayout>

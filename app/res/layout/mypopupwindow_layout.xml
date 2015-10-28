@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+  <!-- <RelativeLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tab_bg_holo"
+       android:visibility="gone">
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/button1" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_up"
+            android:textSize="20sp" />
+        </RelativeLayout>-->
+    
+	<!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#f4f4f4"-->
+        <!--android:focusable="false"-->
+        <!--android:gravity="left"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_below="@id/tab_layout"-->
+        <!--android:text="    切换分类"-->
+        <!--android:textColor="@color/column_tv_bg1"-->
+        <!--android:textSize="18dp" />-->
+	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp" >
+
+        <GridView
+            android:id="@+id/column_edit_gv_gvcolumn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:listSelector="#00000000"
+            android:background="#fff"
+            android:verticalSpacing="3dp" >
+        </GridView>
+
+        <View
+            android:id="@+id/block_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/column_edit_gv_gvcolumn"
+            android:background="@color/color_cccccccc"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

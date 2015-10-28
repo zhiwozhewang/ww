@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/readacticle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/normal_read_relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/system_top_nav" >
+
+        <Button
+            android:id="@+id/back_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_back_button2" />
+
+        <Button
+            android:id="@+id/fav_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/button_fontsize"
+            android:background="@drawable/button_fav_selector"
+            android:onClick="onFavoriteClick" />
+
+        <Button
+            android:id="@+id/button_fontsize"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_font_selector"
+            android:onClick="onfontSizeClick" />
+    </RelativeLayout>
+
+    <com.longyuan.qm.widget.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/normal_read_relativeLayout1"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/normal_read_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtTitle"
+                android:layout_below="@+id/txtTitle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/m_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/item_bookimg"
+                    android:visibility="invisible" />
+
+                <!--<TextView
+                    android:id="@+id/text_kan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/m_icon"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />-->
+
+                <TextView
+                    android:id="@+id/text_auth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/m_icon"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#999999"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="10dip" />
+
+        </RelativeLayout>
+    </com.longyuan.qm.widget.pulltorefresh.PullToRefreshScrollView>
+
+</RelativeLayout>

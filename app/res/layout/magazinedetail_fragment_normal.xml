@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BookDetailActivityLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.longyuan.fragment.BookShelfFragment" >
+
+    <include
+        android:id="@+id/relativeLayout1"
+        layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/magdetail_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_mag_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/mag_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_mag_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relativeLayout_mag_name"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/minor_title_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分类："
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/minor_qk_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/minor_title_classify"
+                    android:text="刊期："
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/title_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/minor_title_classify"
+                    android:layout_toRightOf="@id/minor_title_classify"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/title_qk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/minor_qk_classify"
+                    android:layout_toRightOf="@id/minor_qk_classify"
+                    android:textColor="#f00"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/attention_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/title_qk"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_add_book"
+                    android:text="关注"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mag_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout_mag_info"
+                android:ellipsize="end"
+                android:lines="4"
+                android:textColor="@color/color_b1b1b1"
+                android:paddingTop="10dp"
+                android:textSize="15sp" />
+
+            <com.longyuan.qm.widget.pulltorefresh.PullToRefreshGridView
+                android:id="@+id/mag_detail_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/mag_detail"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:paddingTop="5dp"
+                android:scrollbars="none" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

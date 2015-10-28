@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/bookshelf_cover"
+        android:layout_width="110dip"
+        android:layout_height="146dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/bookshelf_imageView_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/layout_bg2"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/bookshelf_tvBookSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="4dp"
+            android:text="100.0KB"
+            android:textSize="12dp"
+            android:visibility="invisible" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/bookshelf_FileSelectIcon"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" />
+        <!-- android:layout_marginRight="3dip" -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bookshelf_tvBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bookshelf_cover"
+        android:layout_alignRight="@id/bookshelf_cover"
+        android:layout_below="@id/bookshelf_cover"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left"
+        android:maxLines="2"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/bookshelf_tvBookProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bookshelf_tvBookName"
+        android:layout_alignRight="@id/bookshelf_tvBookName"
+        android:layout_below="@id/bookshelf_tvBookName"
+        android:gravity="left"
+        android:lines="2"
+        android:textSize="15sp" />
+
+</RelativeLayout>

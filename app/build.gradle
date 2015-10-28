@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId 'com.longyuan.qm'
+        minSdkVersion 14
+        targetSdkVersion 20
+        versionCode 300
+        versionName '3.0.0'
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile "AndroidManifest.xml"
+            java.srcDirs = ["src"]
+            res.srcDirs = ["res"]
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+    // This is bad practice - we should fix the warnings instead.
+    lintOptions {
+        abortOnError false
+        // Unfortunately we can't set minSdkVersion to the real min version, so we disable the warnings.
+        disable 'NewApi', 'InlinedApi', 'UnusedAttribute'
+    }
+    productFlavors {
+}
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.loopeer.android.reader:reader-core:2.1.1'
+    compile project(':libraries:Longyuan-SDK-TAB')
+    compile project(':libraries:slidingMenu')
+    compile project(':libraries:ReaderCode')
+}

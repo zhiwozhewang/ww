@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/touch_loading_height"
+    android:padding="@dimen/small_space" >
+
+    <ImageView
+        android:id="@+id/iv_touch_loading_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/xmiddle_space"
+        android:layout_marginRight="@dimen/xmiddle_space"
+        android:contentDescription="@string/imageDescription"
+        android:src="@drawable/touch_loading_up_arrow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_touch_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/small_textSize"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pb_touch_loading_progress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/small_space"
+        android:layout_toLeftOf="@+id/tv_touch_loading_text"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_touch_loading_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_touch_loading_text"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 从屏幕右边偏离2%位置开始进入，到达终点后有超出在返回终点的动态效果 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0%p"
+        android:toXDelta="0%p" />
+
+</set>
+
+<!-- 
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="1000"
+        android:fromXDelta="-50%p"
+        android:toXDelta="0" />
+
+</set>
+
+ -->

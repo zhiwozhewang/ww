@@ -1,0 +1,154 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+div {
+    text-indent: 0em
+}
+p {
+    text-indent: 0em
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+}
+ol, ul {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+q:before, q:after {
+	content: '';
+}
+abbr, acronym {
+	border: 0;
+}
+/**reset css**/
+body {
+	font-size: 20px;
+	color: #424242;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	margin: 0 auto;
+	font-family: SimHei,"Microsoft JhengHei","Microsoft YaHei", sans-serif;
+}
+@media (max-width: 767px) {
+body {
+	width: auto;
+}
+}
+ @media (min-width: 768px) {
+body {
+	width: 700px;
+}
+}
+@media (min-width: 992px) {
+body {
+	width: 920px;
+}
+}
+@media (min-width: 1200px) {
+body {
+	width: 920px;
+}
+}
+ul, li {
+	list-style: none;
+}
+.article-content {
+	display: block;
+	float: left;
+}
+ul {
+	display: block;
+	float: right;
+	text-align: right;
+	min-width: 40%;
+}
+ul li {
+	height: 1.75em;
+	line-height: 1.75em;
+	border-bottom: 1px dotted rgba(66,66,66,.2);
+}
+span {
+	display: block;
+	color: rgba(66,66,66,.7);
+	font-size: 0.75em;
+}
+h1 {
+	font-size: 1.2em;
+	line-height: 2.4em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	font-weight: bold;
+}
+h3 { font-size:1.2em; line-height:1.75em; margin-top:0.5em; margin-bottom:0.5em; font-weight:bold;}
+p {
+	font-size: 1.2em;
+	font-weight: lighter;
+	line-height: 1.75em;
+	text-align: justify;
+	text-justify: ideographic;
+	margin-bottom: 1em;
+	font-family: SimSun;
+}
+blockquote {
+	padding-left: 1em;
+	padding-right: 1em;
+	border-left: 2px solid rgba(66,66,66,.3);
+}
+blockquote p strong {
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: bold;
+	font-family: SimHei;
+	color: rgba(66,66,66,.7);
+}
+blockquote p em {
+	font-size: 0.9em;
+	line-height: 1.6em;
+	color: rgba(66,66,66,.5);
+	font-family: SimHei;
+}
+figure {
+	width: 100%;
+	padding: 1em 0;
+	margin: 0;
+	text-align: center;
+}
+figure img, p img , img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+p img {
+	display:inline;
+	text-align: center;
+}
+figcaption {
+	margin-top: 0.5em;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	color: rgba(66,66,66,.8);
+	font-family: SimHei;
+	text-align: left;
+}
+video {width:100%;}
+hr {line-height: 0px;
+    margin: 0em;
+    margin-top:1px;
+    margin-bottom:1px;
+    padding:0em;
+}

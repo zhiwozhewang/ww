@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/settings_read_custom_marginSpacing"
+        android:textColor="?attr/textReaderBody_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:divider="?attr/drawableDividerVertical"
+        android:dividerPadding="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/wrapper_settings_read_margin_spacing_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_settings_read_margin_spacing_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_l_settings_read_margin_spacing_1_checked_day"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wrapper_settings_read_margin_spacing_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_settings_read_margin_spacing_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_l_settings_read_margin_spacing_2_day"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wrapper_settings_read_margin_spacing_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_settings_read_margin_spacing_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_l_settings_read_margin_spacing_3_day"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

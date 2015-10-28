@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_notification_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imageDescription" />
+
+    <TextView
+        android:id="@+id/tv_notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_notification_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/small_textSize" />
+
+    <TextView
+        android:id="@+id/tv_notification_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_notification_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_notification_icon"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/pb_notification_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_notification_percent"
+        android:layout_below="@id/tv_notification_title"
+        android:layout_toRightOf="@id/tv_notification_percent"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp" />
+
+</RelativeLayout>

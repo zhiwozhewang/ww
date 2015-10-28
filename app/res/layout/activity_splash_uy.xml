@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.longyuan.qm.view.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutbackground"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.longyuan.qm.activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_image_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/frame_bg" />
+
+    <ImageView
+        android:id="@+id/border_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_border_top" />
+
+    <ImageView
+        android:id="@+id/border_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame_border_bottom" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:paddingBottom="20dp"-->
+    <!--android:text=""-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="10sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/textView1"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="14sp" />-->
+    <!---->
+    <!--&lt;!&ndash;android:layout_width="201dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="120dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/border_top"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/splash_image_pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/frame_bg_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout00"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/user_editor_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/login_username_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/login_username_icon" />
+
+                <EditText
+                    android:id="@+id/name_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/login_username_icon"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:hint="用户名/手机号"
+                    android:inputType="text"
+                    android:textColorHint="#CCCCCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/relativeLayout00"
+                android:layout_alignRight="@+id/relativeLayout00"
+                android:layout_below="@+id/relativeLayout00"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/user_editor_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/login_password_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/login_password_icon" />
+
+                <EditText
+                    android:id="@+id/pwd_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/login_password_icon"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:textColorHint="#CCCCCC" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/relativeLayout01"
+                android:layout_alignRight="@+id/relativeLayout01"
+                android:layout_below="@+id/relativeLayout01"
+                android:background="#ff0000"
+                android:onClick="onLoginClick"
+                android:text="登    录"
+                android:textColor="#ffffff" />
+            <!-- android:layout_below="@+id/relativeLayout01"
+                android:background="@drawable/iconbar_u" -->
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.longyuan.qm.view.KeyboardListenRelativeLayout>

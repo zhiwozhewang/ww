@@ -1,0 +1,40 @@
+apply plugin: "com.android.library"
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 20
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile "AndroidManifest.xml"
+            java.srcDirs = ["src"]
+            res.srcDirs = ["res"]
+        }
+    }
+}
+
+dependencies {
+    // Supports Android 4.0.3 and later (API level 15)
+    //compile 'com.embarkmobile:zxing-android-minimal:2.0.0@aar'
+
+    // Supports Android 2.1 and later (API level 7), but not optimal for later Android versions.
+    // If you only plan on supporting Android 4.0.3 and up, you don't need to include this.
+    //compile 'com.embarkmobile:zxing-android-legacy:2.0.0@aar'
+
+    // Convenience library to launch the scanning and encoding Activities.
+    // It automatically picks the best scanning library from the above two, depending on the
+    // Android version and what is available.
+    //compile 'com.embarkmobile:zxing-android-integration:2.0.0@aar'
+
+    compile rootProject.ext.libraries.supportv4
+}

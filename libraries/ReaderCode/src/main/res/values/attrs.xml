@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AnyTextView">
+        <attr name="typeface" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ReaderTitlebar">
+        <attr name="readerTitlebarTitle" format="string" />
+        <attr name="readerTitlebarLeftText" format="string" />
+        <attr name="readerTitlebarLeftIcon" format="reference" />
+        <attr name="readerTitlebarRightIcon" format="reference" />
+        <attr name="readerTitlebarRightText" format="string" />
+    </declare-styleable>
+
+    <!-- Colors -->
+    <attr name="textReaderBody_1" format="reference|color" />
+    <attr name="textReaderBody_2" format="reference|color" />
+    <attr name="textReaderBody_3" format="reference|color" />
+    <attr name="textReaderBody_4" format="reference|color" />
+    <attr name="textBookmarkBody_1" format="reference|color" />
+    <attr name="textBookmarkBody_2" format="reference|color" />
+    <attr name="textBookmarkBody_3" format="reference|color" />
+    <attr name="colorDivider" format="reference|color" />
+    <attr name="segmentTintColor" format="reference|color" />
+
+    <!-- Drawables -->
+    <attr name="drawableTitlebar" format="reference|color" />
+    <attr name="drawableBackgroundDrawerItem" format="reference" />
+    <attr name="drawableBack" format="reference" />
+    <attr name="drawableGoContents" format="reference" />
+    <attr name="drawableDivider" format="reference" />
+    <attr name="drawableDividerVertical" format="reference" />
+
+</resources>

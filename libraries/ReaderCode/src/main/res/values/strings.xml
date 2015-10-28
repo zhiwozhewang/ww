@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="app_name">云借阅</string>
+
+    <string name="titlebar_title_skin_manage">皮肤管理</string>
+    <string name="titlebar_title_setting_location">设置存储位置</string>
+    <string name="titlebar_title_setting_read">更多阅读设置</string>
+    <string name="titlebar_title_setting_font">字体</string>
+
+    <string name="settings_read_recently">启动后继续上次阅读</string>
+    <string name="settings_read_animation">翻转动画</string>
+    <string name="settings_read_animation_slide">滑动</string>
+    <string name="settings_read_animation_shift">平移</string>
+    <string name="settings_read_animation_curl">淡出</string>
+    <string name="settings_read_animation_none">无</string>
+    <string name="settings_read_screen">阅读界面屏保时间</string>
+    <string name="settings_read_screen_second_minutes">2分钟</string>
+    <string name="settings_read_screen_five_minutes">5分钟</string>
+    <string name="settings_read_screen_ten_minutes">10分钟</string>
+    <string name="settings_read_screen_none">无</string>
+    <string name="settings_read_custom">自定义选项</string>
+    <string name="settings_read_custom_font">字体</string>
+    <string name="settings_read_custom_firstLineIndent">首行缩进</string>
+    <string name="settings_read_custom_lineSpacing">行间距</string>
+    <string name="settings_read_custom_sectionSpacing">段间距</string>
+    <string name="settings_read_custom_marginSpacing">页边间距</string>
+    <string name="settings_read_custom_brightness">与设备同步</string>
+    <string name="settings_read_custom_simplified">简体</string>
+    <string name="settings_read_custom_traditional">繁体</string>
+    <string name="settings_read_custom_more">更多阅读设置</string>
+
+    <string name="contents_segmented_catalog">目录</string>
+    <string name="contents_segmented_bookmark">书签</string>
+
+    <string name="typeface_not_found">Typeface %s not found, or could not be loaded.
+        Showing default typeface.
+    </string>
+    <string name="assets_fonts_folder">fonts/</string>
+
+    <string name="yesterday">昨天</string>
+    <string name="daybeforeyesterday">前天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="before">前</string>
+    <string name="complete">完成</string>
+    <string name="nextstep">下一步</string>
+    <string name="day">天</string>
+    <string name="month">个月</string>
+    <string name="week">周</string>
+    <string name="morning">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="one_year_before">一年前</string>
+    
+</resources>

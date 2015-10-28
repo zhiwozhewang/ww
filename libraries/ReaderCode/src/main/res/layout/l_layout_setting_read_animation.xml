@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/settings_read_animation"
+        android:textColor="?attr/textReaderBody_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:divider="?attr/drawableDividerVertical"
+        android:dividerPadding="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/text_settings_read_animation_slide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:text="@string/settings_read_animation_slide"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_settings_read_animation_shift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:text="@string/settings_read_animation_shift"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_settings_read_animation_curl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:text="@string/settings_read_animation_curl"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_settings_read_animation_none"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:text="@string/settings_read_animation_none"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

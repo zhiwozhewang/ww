@@ -1,0 +1,35 @@
+<fonts>
+
+    <font
+        family="宋体"
+        regular="LSun.ttf"
+        bold="LSun.ttf"
+        italic="LSun.ttf"
+        boldItalic="LSun.ttf"
+        />
+
+    <font
+        family="仿宋"
+        regular="LFang.ttf"
+        bold="LFang.ttf"
+        italic="LFang.ttf"
+        boldItalic="LFang.ttf"
+        />
+
+    <font
+        family="黑体"
+        regular="LHei.ttf"
+        bold="LHei.ttf"
+        italic="LHei.ttf"
+        boldItalic="LHei.ttf"
+        />
+
+    <font
+        family="华文行楷"
+        regular="LSTXingKai.ttf"
+        bold="LSTXingKai.ttf"
+        italic="LSTXingKai.ttf"
+        boldItalic="LSTXingKai.ttf"
+    />
+
+</fonts>

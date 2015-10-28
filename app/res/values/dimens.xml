@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <!-- 滑动加载 -->
+    <dimen name="touch_loading_height">70dp</dimen>
+    <!-- 加载弹出框 -->
+    <dimen name="dialog_loading_width">170dp</dimen>
+    <dimen name="dialog_loading_height">120dp</dimen>
+    <dimen name="dialog_loading_textSize">15sp</dimen>
+    <!-- 间距 -->
+    <dimen name="small_space">10dp</dimen>
+    <dimen name="middle_space">20dp</dimen>
+    <dimen name="xmiddle_space">30dp</dimen>
+    <dimen name="big_space">40dp</dimen>
+    <dimen name="xbig_space">50dp</dimen>
+
+    <!-- 常用字体大小 -->
+    <dimen name="small_textSize">15sp</dimen>
+    <dimen name="middle_textSize">17sp</dimen>
+    <dimen name="xmiddle_textSize">20sp</dimen>
+    <!-- 间隔线宽高度 -->
+    <dimen name="small_divider_widthAndHeight">1dp</dimen>
+    <dimen name="middle_divider_widthAndHeight">2dp</dimen>
+    <dimen name="xmiddle_divider_widthAndHeight">3dp</dimen>
+
+    <!-- 头条列表图片大小 -->
+    <dimen name="headline_image_thumb">100dp</dimen>
+    <dimen name="refer_image_thumb_width">90dp</dimen>
+    <dimen name="refer_image_thumb_height">110dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <!-- Tabs -->
+    <dimen name="tab_padding_top_bottom">5dp</dimen>
+    <dimen name="tab_padding_left_right">10dp</dimen>
+    <dimen name="tab_height">40dp</dimen>
+    <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+    <dimen name="ambilwarna_hsvWidth">240dp</dimen>
+    <dimen name="ambilwarna_hueWidth">30dp</dimen>
+    <dimen name="ambilwarna_spacer">8dp</dimen>
+    <dimen name="listview_left_padding">15dp</dimen>
+    <dimen name="listview_right_padding">15dp</dimen>
+    <dimen name="preference_icon_width">50.0dip</dimen>
+    <dimen name="preference_margin">19.0dip</dimen>
+    <dimen name="preference_widget_icon_width">48.0dip</dimen>
+    <dimen name="list_item_height">51.0dip</dimen>
+
+    <!-- Default -->
+    <dimen name="radius_default">3dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="margin_default">5dp</dimen>
+    <dimen name="line_default">1dp</dimen>
+
+    <!-- Products -->
+    <dimen name="height_list">90dp</dimen>
+    <dimen name="size_list_image">64dp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="font_size_description">15sp</dimen>
+    <dimen name="margin_setting">20dp</dimen>
+    <dimen name="font_size_new_tag">11sp</dimen>
+    <dimen name="padding_new_tag">3dp</dimen>
+
+    <!-- UI -->
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="indicator_right_padding">100dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+
+</resources>

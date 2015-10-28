@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme" />
+    <style name="Theme.Platform" parent="@android:style/Theme.Light.NoTitleBar" />
+    <style name="Theme.Reader.Night" parent="@style/Theme.Platform">
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Colors -->
+        <item name="textReaderBody_1">@color/color_bbbbbb</item>
+        <item name="textReaderBody_2">@android:color/white</item>
+        <item name="textReaderBody_3">@color/color_494f5a</item>
+        <item name="textReaderBody_4">@color/color_5fb7e7</item>
+        <item name="textBookmarkBody_1">@color/color_bbbbbb</item>
+        <item name="textBookmarkBody_2">@color/color_bbbbbb</item>
+        <item name="textBookmarkBody_3">@color/color_bbbbbb</item>
+        <item name="colorDivider">@color/color_757677</item>
+        <item name="segmentTintColor">@color/color_929292</item>
+
+        <!-- Drawables -->
+        <item name="drawableBack">@drawable/ic_l_back_white</item>
+        <item name="drawableGoContents">@drawable/contents_go_night</item>
+        <item name="drawableTitlebar">@color/background_titlebar_night</item>
+        <item name="drawableDivider">@drawable/ll_divider_night</item>
+        <item name="drawableDividerVertical">@drawable/ll_divider_vertical_night</item>
+
+    </style>
+
+    <style name="Theme.Reader" parent="@style/Theme.Platform">
+        <item name="android:colorBackground">@color/background_white</item>
+        <item name="android:windowBackground">@color/background_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Colors -->
+        <item name="textReaderBody_1">@color/color_929292</item>
+        <item name="textReaderBody_2">@color/color_929292</item>
+        <item name="textReaderBody_3">@color/color_c7c6c6</item>
+        <item name="textReaderBody_4">@color/color_5fb7e7</item>
+        <item name="textBookmarkBody_1">#404040</item>
+        <item name="textBookmarkBody_2">#969591</item>
+        <item name="textBookmarkBody_3">@color/color_929292</item>
+        <item name="colorDivider">@color/color_a9a9a9</item>
+        <item name="segmentTintColor">@color/color_5fb7e7</item>
+
+        <!-- Drawables -->
+        <item name="drawableBack">@drawable/ic_l_back_white</item>
+        <item name="drawableGoContents">@drawable/contents_go</item>
+        <item name="drawableTitlebar">@color/background_titlebar</item>
+        <item name="drawableDivider">@drawable/ll_divider</item>
+        <item name="drawableDividerVertical">@drawable/ll_divider_vertical</item>
+
+    </style>
+
+</resources>

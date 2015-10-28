@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">@color/color_2a2e36</color>
+    <color name="background_white">@android:color/white</color>
+    <color name="background_titlebar_night">@color/color_494f5a</color>
+    <color name="background_titlebar">#efefef</color>
+
+    <color name="color_494f5a">#494f5a</color>
+
+    <color name="color_2a2e36">#FF2a2e36</color>
+    <color name="color_c7c6c6">#c7c6c6</color>
+    <color name="color_757677">#FF757677</color>
+    <color name="color_a9a9a9">#FFA9A9A9</color>
+    <color name="color_5fb7e7">#FF5FB7E7</color>
+    <color name="color_929292">#FF929292</color>
+    <color name="color_434853">#434853</color>
+    <color name="color_ffe0b2">#ffb19080</color>
+    <color name="color_f1b3bc">#ffa97f56</color>
+    <color name="color_bbbbbb">#ffbbbbbb</color>
+    <color name="color_00695c">#ff838b69</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_795548">#3c384b</color>
+    <color name="color_5f382e">#5f382e</color>
+
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+</resources>

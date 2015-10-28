@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/settings_read_custom"
+        android:textColor="?attr/textReaderBody_2"
+        android:textSize="@dimen/text_size_small" />
+
+    <RelativeLayout
+        android:id="@+id/wrapper_reader_settings_font"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_selector"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/settings_read_custom_font"
+            android:textColor="?attr/textReaderBody_2"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/iamge_settings_read_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_l_settings_read_arrow_day" />
+
+        <TextView
+            android:id="@+id/text_setting_read_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:layout_toLeftOf="@id/iamge_settings_read_arrow"
+            android:layout_toStartOf="@id/iamge_settings_read_arrow"
+            android:text="@string/settings_read_custom_font"
+            android:textColor="?attr/textReaderBody_4"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+</LinearLayout>

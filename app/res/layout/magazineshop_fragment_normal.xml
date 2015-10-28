@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookshop_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg_holo" >
+
+        <com.viewpagerindicator.TabPageIndicator
+            android:id="@+id/mag_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_down"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/searchlayout_bg" >
+
+        <Button
+            android:id="@+id/mag_search_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:text="搜索"
+            android:textColor="@color/search_button"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/mag_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/mag_search_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="请输入内容"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="#6F6F6F"
+            android:textColorHint="#6F6F6F"
+            android:textStyle="normal"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mag_vp_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp" />
+
+    <com.longyuan.qm.widget.pulltorefresh.PullToRefreshGridView
+        android:id="@+id/magazine_search_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:layout_below="@id/search_layout"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/mag_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="数据加载失败，点击重试!"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

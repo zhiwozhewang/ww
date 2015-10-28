@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 启动界面 -->
+    <drawable name="frame_bg">@drawable/bg</drawable>
+    <drawable name="frame_border_top">@drawable/border_top</drawable>
+    <drawable name="frame_border_bottom">@drawable/border_bottom</drawable>
+    <drawable name="frame_bg_logo">@drawable/bg_logo</drawable>
+    <!-- 左侧滑栏 -->
+    <drawable name="left_list_logo_new">@drawable/sliding_logo</drawable>
+    <!-- 左侧滑栏背景 -->
+    <drawable name="left_list_bg">@drawable/bg_home</drawable>
+    <!-- 左侧滑栏背景 -->
+    <drawable name="ritht_list_bg">@drawable/bg_home_r</drawable>
+
+    <!-- title item的边框  #d5d5d5-->
+    <color name="cateloglist_list_title_item_edging_1">#bbbbbb</color>
+    <color name="cateloglist_list_title_item_edging_2">#f9f9f9</color>
+    <color name="cateloglist_list_title_item_edging_3">#00000000</color>
+    
+    <!-- 导航栏颜色 -->
+    <!-- 全民阅读#28B9C6 -->
+    <!-- 优阅#AC0920 -->
+    <color name="system_top_nav">#28B9C6</color>
+    <color name="system_top">#ffffff</color>
+
+    <!-- 左侧划栏item点击后颜色 #741A1A红色     #A6E2E7蓝色-->
+    <color name="leftMenu_item_press">#A6E2E7</color>
+    <!-- 左侧划栏item未点击颜色-->
+    <color name="leftMenu_item">#00000000</color>
+
+    
+    <color name="color_666666">#666666</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_8a8a8a">#8A8A8A</color>
+    <color name="color_4e4e4e">#4E4E4E</color>
+    <color name="color_f26522">#F26522</color>
+    <color name="color_7b7b7b">#7B7B7B</color>
+    <color name="color_b30f13">#B30F13</color>
+    <color name="color_383838">#383838</color>
+    <color name="color_7f7f7f">#7F7F7F</color>
+    <color name="color_484848">#484848</color>
+    <color name="color_0e0e0e">#0E0E0E</color>
+    <color name="color_373d48">#373d48</color>
+    <color name="color_868686">#868686</color>
+    <color name="color_b1b1b1">#b1b1b1</color>
+    <color name="color_aaaaaa">#AAAAAA</color>
+    <color name="color_cccccc">#CCCCCC</color>
+    <color name="color_cccccccc">#99000000</color>
+    
+    <color name="blue">#0066FF</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="text_color">#434343</color>
+    <color name="black_half">#50000000</color>
+    <color name="transparent_background2">#80ffffff</color>
+    <color name="drop_down_to_refresh_list_header_font_color">#FFFFFF</color>
+    <color name="main_listview_item">#2F2F2F</color>
+    <color name="textview_color">#DCDCDC</color>
+    <color name="gold">#b89766</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#111111</color>
+    <color name="red">#7f00</color>
+    <color name="bg_white">#A6E2E7</color>
+    
+    <drawable name="red">#7f00</drawable>
+    <color name="dimgrey">#696969</color>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+    <drawable name="white">#FFFFFFFF</drawable>
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="focused">#6699FF</color>
+    <color name="solid_red">#FFFF0000</color>
+    <color name="solid_blue">#FF0000FF</color>
+    <color name="solid_green">#FF00FF00</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="sblue">#77C0D9D9</color>
+    <color name="sky_blue">#7f3299CC</color>
+    <color name="ultrareader_settings_title_background">#FF444444</color>
+    <color name="solid_white">#ffffffff</color>
+    <color name="solid_black">#ff000000</color>
+    <color name="title_text_color">#FF7F4f1B</color>
+    <color name="context_text_color">#FF8B6740</color>
+    <color name="button_text_color">#FFDCBE8E</color>
+    <color name="book_listitem_background_color">#FFEFE7DD</color>
+    <color name="menu_bar_table_background">#FF808080</color>
+    <color name="menu_bar_text_color">#FF4D4D4D</color>
+    <color name="bookmark_view_background">#FFEFE6DD</color>
+    <color name="reader_settings_item_title_color">#FFF6F6F6</color>
+    <color name="reader_settings_item_theme_color">#FF72583B</color>
+    <color name="reader_settings_item_introduction_color">#FF71614F</color>
+    <color name="reader_settings_about_authorization_color">#FF72583B</color>
+    <color name="reader_settings_about_authorization_information_color">#FF857E76</color>
+    <color name="reader_settings_onlineshop_introduction_color">#FF71614F</color>
+    <color name="darkgray">#50808080</color>
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="main_bg_1">#fdf7d5</color>
+    <color name="main_bg_2">#668564</color>
+    <color name="main_bg_3">#997c56</color>
+    
+        <!-- selected tab text -->
+    <color name="selected_tabtext">#b20000</color>
+    <!-- non selected tab text -->
+    <color name="unselected_tabtext">#000</color>
+    
+    
+    <color name="app_bg">#eff5f8</color>
+	<color name="column_tv_bg1">#CC4D40</color>
+	<color name="column_tv_bg2">#000</color>
+	
+	<!-- 搜索界面 -->
+    <drawable name="search_field_bg">@drawable/searchfield_bg</drawable>
+    <drawable name="search_filed_find">@drawable/search_find</drawable>
+
+    <color name="search_button">#BB1100</color>
+
+    <color name="forvaite_title_text">#DCDCDC</color>
+    <color name="forvaite_bg">#333333</color>
+    <color name="forvaite_list_bg">#333333</color>
+
+    <!-- 收藏列表 -->
+    <color name="favorite_list_text_title">#F0F0F0</color>
+    <color name="favorite_list_text_summ">#E4E4E4</color>
+
+    <!-- 文章目录 -->
+    <color name="cateloglist_list_bg">#eeeeee</color>
+    <color name="cateloglist_list_item_bg">#eeeeee</color>
+    <!-- 普通item的边框 -->
+    <color name="cateloglist_list_item_edging_1">#d5d5d5</color>
+    <color name="cateloglist_list_item_edging_2">#fff</color>
+    <!-- title item的边框 -->
+
+    <!-- 阅读页 -->
+    <drawable name="read_textsize_button">@drawable/button_font_selector</drawable>
+    <drawable name="read_favorite_button">@drawable/button_fav_selector</drawable>
+
+    <!-- 全局控制 -->
+    <drawable name="main_top_bg">@drawable/bg_main_top</drawable>
+    <drawable name="top_back_button">@drawable/button_back</drawable>
+    <drawable name="top_back_button2">@drawable/button_back_selector</drawable>
+
+    <color name="title_text">#FFFFFF</color>
+    <color name="search_field_bg">#2C2C2C</color>
+
+    <!-- shdx_long_top -->
+    <drawable name="bottom_tab_bg">@drawable/iconbar</drawable>
+
+    <!-- 期刊列表 -->
+    <color name="magazine_list_text_title">#F0F0F0</color>
+    <color name="magazine_list_text_summ">#E4E4E4</color>
+
+    <!-- 首页列表 -->
+    <color name="line_color1">#FFFFFF</color>
+
+    <!-- 列表分割线 -->
+    <drawable name="list_divider">@drawable/divider_main</drawable>
+	
+</resources>
